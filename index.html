@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Preferences</title>
+
+    <link rel="stylesheet" href="./libs/swiper/swiper.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+
+  <body>
+
+    <!-- Wrapper -->
+    <div class="wrapper">
+
+      <!-- Preferences -->
+      <div class="preferences">
+        <div class="container">
+          <div class="preferences__inner">
+
+            <h2 class="preferences__title">Preferences</h2>
+
+            <div class="preferences__info">
+              On this page you can configure the main system parameters available for customization
+            </div>
+
+            <!-- Form-preferences -->
+            <form action="#" id="form" class="form-preferences">
+
+              <label class="form-preferences__label mb-24">
+                Company Title
+                <input class="input" type="text" placeholder="Star and Moon" name="title" />
+              </label>
+
+              <div class="form-preferences__dropdown mb-24">
+                <p>First Day</p>
+                <div class="dropdown">
+                  <div class='dropdown__button'>
+                    Monday
+                  </div>
+
+                  <ul class="dropdown__list">
+                    <li class="dropdown__list-item" data-value='Monday'>
+                      Monday
+                    </li>
+                    <li class="dropdown__list-item" data-value='Sunday'>
+                      Sunday
+                    </li>
+                    <li class="dropdown__list-item" data-value='System'>
+                      System
+                    </li>
+                  </ul>
+                  <input type="text" name="Day" value="" class="dropdown__input-hidden">
+                </div>
+              </div>
+              
+              <div class="form-preferences__dropdown mb-24">
+                <p>Container Width</p>
+                <div class="dropdown">
+                  <div class='dropdown__button'>
+                    Fixed
+                  </div>
+                  <ul class="dropdown__list">
+                    <li class="dropdown__list-item" data-value='Fixed 1'>
+                      Fixed 1
+                    </li>
+                    <li class="dropdown__list-item" data-value='Fixed 2'>
+                      Fixed 2
+                    </li>
+                    <li class="dropdown__list-item" data-value='Fixed 3'>
+                      Fixed 3
+                    </li>
+                  </ul>
+                  <input type="text" name="Width" value="" class="dropdown__input-hidden">
+                </div>
+              </div>
+
+              <div class="form-preferences__dropdown mb-24">
+                <p>Homepage</p>
+                <div class="dropdown">
+                  <div class='dropdown__button'>
+                    Starred Projects
+                  </div>
+                  <ul class="dropdown__list">
+                    <li class="dropdown__list-item" data-value='First projects'>
+                      First projects
+                    </li>
+                    <li class="dropdown__list-item" data-value='Second projects'>
+                      Second projects
+                    </li>
+                    <li class="dropdown__list-item" data-value='Third projects'>
+                      Third projects
+                    </li>
+                  </ul>
+                  <input type="text" name="Homepage" value="" class="dropdown__input-hidden">
+                </div>
+              </div>
+
+              <label class="form-preferences__label mb-24">
+                Indent Size
+                <input class="input" type="text" placeholder="Default" name="Size" />
+              </label>
+
+              <label class="form-preferences__label mb-45">
+                Indent Size
+                <ul class="form-preferences__label-items">
+                  <li class="form-preferences__label-item">
+                    <input class="input" type="text" placeholder="0000" name="Code1" />
+                  </li>
+                  <li class="form-preferences__label-item">
+                    <input class="input" type="text" placeholder="0000" name="Code2" />
+                  </li>
+                  <li class="form-preferences__label-item">
+                    <input class="input" type="text" placeholder="0000" name="Code3" />
+                  </li>
+                </ul>
+                
+              </label>
+
+              <!-- Radio -->
+              <div class="form-preferences__radio">
+                <div class="form-preferences__radio-name">
+                  Theme
+                </div>
+                <div class="form-preferences__radio-button">
+                  <label class="radio">
+                    <input type="radio" name="radio" class="radio__input light" />
+                    <span></span>
+                    <div class="radio__name">Light</div>
+                  </label>
+                  <label class="radio">
+                    <input type="radio" name="radio" class="radio__input dark" />
+                    <span></span>
+                    <div class="radio__name">Dark</div>
+                  </label>
+                </div>
+              </div>
+              
+              <!-- Button -->
+              <div class="form-preferences__buttons">
+                <button class="btn btn-save">Apply and Save</button>
+                <button class="btn cancel">Cancel</button>
+                <!--<button type="submit" value="Apply and Save" class="btn btn-save"/>-->
+                <!--<button type="button" value="Cancel" class="btn cancel" />-->
+              </div>
+            </form>
+          </div>
+
+          <footer class="footer">
+            <div class="footer__inner">
+              <div class="footer__content">
+                <span>
+                  2020-2022
+                </span>
+                <a href="#">
+                  Terms of Service
+                </a>
+                <span>
+                  and
+                </span>
+                <a href="#">
+                  Conditions
+                </a>
+              </div>
+            </div>
+          </footer>
+        </div>
+      </div>
+    </div>
+
+    <script src="./libs/jquery/jquery-3.2.1.min.js"></script>
+    <script src="./libs/swiper/swiper.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
